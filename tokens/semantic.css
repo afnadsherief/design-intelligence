@@ -1,0 +1,93 @@
+﻿/* ==========================================
+   DESIGN INTELLIGENCE — TOKENS: SEMANTIC LAYER
+   Maps base primitives to semantic meaning.
+   No component binding.
+   ========================================== */
+
+:root {
+  /* SURFACE COLORS */
+  --surface-background: rgb(var(--color-white));
+  --surface-foreground: rgb(var(--color-gray-50));
+  --surface-elevated: rgb(var(--color-white));
+  --surface-overlay: rgba(0, 0, 0, 0.5);
+
+  /* BORDER COLORS */
+  --border-default: rgb(var(--color-gray-200));
+  --border-strong: rgb(var(--color-gray-300));
+  --border-focus: rgb(var(--color-blue-500));
+
+  /* TEXT COLORS */
+  --text-primary: rgb(var(--color-gray-900));
+  --text-secondary: rgb(var(--color-gray-600));
+  --text-tertiary: rgb(var(--color-gray-500));
+  --text-muted: rgb(var(--color-gray-400));
+  --text-inverse: rgb(var(--color-white));
+
+  /* INTERACTIVE COLORS */
+  --color-primary: rgb(var(--color-blue-600));
+  --color-primary-hover: rgb(var(--color-blue-700));
+  --color-primary-foreground: rgb(var(--color-white));
+  --color-secondary: rgb(var(--color-gray-100));
+  --color-secondary-foreground: rgb(var(--color-gray-900));
+  --color-accent: rgb(var(--color-purple-600));
+  --color-accent-foreground: rgb(var(--color-white));
+
+  /* FEEDBACK COLORS */
+  --color-success: rgb(var(--color-green-600));
+  --color-success-foreground: rgb(var(--color-white));
+  --color-warning: rgb(var(--color-yellow-600));
+  --color-warning-foreground: rgb(var(--color-white));
+  --color-error: rgb(var(--color-red-600));
+  --color-error-foreground: rgb(var(--color-white));
+  --color-info: rgb(var(--color-blue-600));
+  --color-info-foreground: rgb(var(--color-white));
+
+  /* SPACING SEMANTIC */
+  --space-component-xs: calc(var(--space-1) * 1px);
+  --space-component-sm: calc(var(--space-2) * 1px);
+  --space-component-md: calc(var(--space-3) * 1px);
+  --space-component-lg: calc(var(--space-4) * 1px);
+  --space-component-xl: calc(var(--space-6) * 1px);
+  --space-layout-sm: calc(var(--space-8) * 1px);
+  --space-layout-md: calc(var(--space-12) * 1px);
+  --space-layout-lg: calc(var(--space-16) * 1px);
+  --space-layout-xl: calc(var(--space-24) * 1px);
+
+  /* TYPOGRAPHY SEMANTIC */
+  --text-display: calc(var(--font-size-10) * 0.0625rem);
+  --text-h1: calc(var(--font-size-8) * 0.0625rem);
+  --text-h2: calc(var(--font-size-7) * 0.0625rem);
+  --text-h3: calc(var(--font-size-6) * 0.0625rem);
+  --text-h4: calc(var(--font-size-5) * 0.0625rem);
+  --text-body-lg: calc(var(--font-size-4) * 0.0625rem);
+  --text-body: calc(var(--font-size-3) * 0.0625rem);
+  --text-body-sm: calc(var(--font-size-2) * 0.0625rem);
+  --text-caption: calc(var(--font-size-1) * 0.0625rem);
+
+  /* ELEVATION SEMANTIC */
+  --elevation-none: var(--shadow-none);
+  --elevation-sm: var(--shadow-sm);
+  --elevation-md: var(--shadow-md);
+  --elevation-lg: var(--shadow-lg);
+  --elevation-xl: var(--shadow-xl);
+
+  /* FOCUS RING */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring-color: rgb(var(--color-blue-500));
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --surface-background: rgb(var(--color-gray-950));
+    --surface-foreground: rgb(var(--color-gray-900));
+    --surface-elevated: rgb(var(--color-gray-800));
+    --border-default: rgb(var(--color-gray-700));
+    --border-strong: rgb(var(--color-gray-600));
+    --text-primary: rgb(var(--color-gray-50));
+    --text-secondary: rgb(var(--color-gray-300));
+    --text-tertiary: rgb(var(--color-gray-400));
+    --text-muted: rgb(var(--color-gray-500));
+  }
+}

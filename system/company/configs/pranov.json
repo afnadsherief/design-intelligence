@@ -1,0 +1,16 @@
+{
+  "id": "pranov",
+  "name": "Pranov",
+  "domain": "pranov.ai",
+  "type": "wellness",
+  "status": "active",
+  "objectives": [
+    "build intelligence platform",
+    "collect user data signals",
+    "develop wellness models"
+  ],
+  "constraints": {
+    "budget": "low",
+    "team": "lean"
+  }
+}

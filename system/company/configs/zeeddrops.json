@@ -1,0 +1,16 @@
+{
+  "id": "zeeddrops",
+  "name": "Zeed Drops",
+  "domain": "zeeddrops.com",
+  "type": "ecommerce",
+  "status": "active",
+  "objectives": [
+    "scale revenue",
+    "optimize conversion",
+    "build brand authority"
+  ],
+  "constraints": {
+    "budget": "low",
+    "team": "lean"
+  }
+}

@@ -1,0 +1,68 @@
+﻿/* ==========================================
+   DESIGN INTELLIGENCE - TOKENS: COMPONENT LAYER
+   Maps semantic tokens to component-specific values.
+   ONLY layer that components may reference.
+   ========================================== */
+
+:root {
+  /* BUTTON TOKENS */
+  --button-height-sm: 36px;
+  --button-height-md: 40px;
+  --button-height-lg: 48px;
+  --button-padding-x: var(--space-component-lg);
+  --button-padding-y: var(--space-component-sm);
+  --button-radius: var(--radius-md);
+  --button-font-size: var(--text-body-sm);
+  --button-font-weight: var(--font-weight-medium);
+  --button-transition: var(--duration-fast) var(--easing-ease-out);
+
+  /* INPUT TOKENS */
+  --input-height: 40px;
+  --input-padding-x: var(--space-component-md);
+  --input-padding-y: var(--space-component-sm);
+  --input-radius: var(--radius-md);
+  --input-font-size: var(--text-body);
+  --input-border-width: 1px;
+  --input-transition: var(--duration-fast) var(--easing-ease-out);
+
+  /* CARD TOKENS */
+  --card-padding: var(--space-component-xl);
+  --card-radius: var(--radius-lg);
+  --card-border-width: 1px;
+  --card-shadow: var(--elevation-sm);
+  --card-shadow-hover: var(--elevation-md);
+
+  /* SECTION TOKENS */
+  --section-padding-sm: var(--space-layout-sm);
+  --section-padding-md: var(--space-layout-md);
+  --section-padding-lg: var(--space-layout-lg);
+  --section-padding-xl: var(--space-layout-xl);
+
+  /* CONTAINER TOKENS */
+  --container-max-sm: 640px;
+  --container-max-md: 768px;
+  --container-max-lg: 1024px;
+  --container-max-xl: 1280px;
+  --container-max-2xl: 1536px;
+  --container-padding: var(--space-component-lg);
+
+  /* GRID TOKENS */
+  --grid-gap-sm: var(--space-component-md);
+  --grid-gap-md: var(--space-component-xl);
+  --grid-gap-lg: var(--space-layout-sm);
+
+  /* APP SHELL TOKENS */
+  --navbar-height: 64px;
+  --sidebar-width: 240px;
+  --sidebar-collapsed-width: 64px;
+
+  /* DASHBOARD TOKENS */
+  --stat-value-size: var(--font-size-7);
+  --chart-height: 384px;
+  --activity-dot-size: 8px;
+
+  /* FOCUS RING */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+  --focus-ring-color: rgb(var(--color-blue-500));
+}
