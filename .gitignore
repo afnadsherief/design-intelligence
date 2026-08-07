@@ -1,0 +1,9 @@
+node_modules
+.next
+.ladle
+*.local
+.DS_Store
+*.log
+.aos-bundle.mjs
+.org-bundle.mjs
+package-lock.json
